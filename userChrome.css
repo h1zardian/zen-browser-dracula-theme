@@ -1,0 +1,71 @@
+/* Dracula Theme for Zen Browser - userChrome.css */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Core Zen Colors */
+        --zen-colors-primary: #44475a !important; /* Current Line */
+        --zen-primary-color: #bd93f9 !important;   /* Purple */
+        --zen-colors-secondary: #44475a !important;
+        --zen-colors-tertiary: #282a36 !important;  /* Background */
+        --zen-colors-border: #bd93f9 !important;
+
+        /* Toolbar and Text */
+        --toolbarbutton-icon-fill: #bd93f9 !important;
+        --lwt-text-color: #f8f8f2 !important;       /* Foreground */
+        --toolbar-field-color: #f8f8f2 !important;
+        --tab-selected-textcolor: #f8f8f2 !important;
+        --toolbar-field-focus-color: #f8f8f2 !important;
+        --toolbar-color: #f8f8f2 !important;
+        --newtab-text-primary-color: #f8f8f2 !important;
+
+        /* Panels and Sidebars */
+        --arrowpanel-color: #f8f8f2 !important;
+        --arrowpanel-background: #282a36 !important;
+        --sidebar-text-color: #f8f8f2 !important;
+        --lwt-sidebar-text-color: #f8f8f2 !important;
+        --lwt-sidebar-background-color: #282a36 !important;
+        --toolbar-bgcolor: #44475a !important;
+        --newtab-background-color: #282a36 !important;
+        --zen-themed-toolbar-bg: #282a36 !important;
+        --zen-main-browser-background: #282a36 !important;
+        --toolbox-bgcolor-inactive: #282a36 !important;
+    }
+
+    #permissions-granted-icon {
+    color: #bd93f9 !important;
+    }
+
+    .sidebar-placesTree, #zen-workspaces-button, .urlbar-background, .content-shortcuts {
+        background-color: #44475a !important;
+    }
+
+    #TabsToolbar, hbox#titlebar, #zen-appcontent-navbar-container {
+    background-color: #282a36 !important;
+    }
+
+    .content-shortcuts {
+        border-color: #bd93f9 !important;
+    }
+
+    .urlbarView-url {
+        color: #8be9fd !important; /* Cyan */
+    }
+
+    #zenEditBookmarkPanelFaviconContainer {
+    background: #282a36 !important;
+    }
+
+    #zen-media-controls-toolbar #zen-media-progress-bar::-moz-range-track {
+    background: #6272a4 !important; /* Comment color for progress track */
+    }
+
+    /* Identity Colors (Containers) */
+    .identity-color-blue      { --identity-tab-color: #8be9fd !important; --identity-icon-color: #8be9fd !important; }
+    .identity-color-turquoise { --identity-tab-color: #8be9fd !important; --identity-icon-color: #8be9fd !important; }
+    .identity-color-green     { --identity-tab-color: #50fa7b !important; --identity-icon-color: #50fa7b !important; }
+    .identity-color-yellow    { --identity-tab-color: #f1fa8c !important; --identity-icon-color: #f1fa8c !important; }
+    .identity-color-orange    { --identity-tab-color: #ffb86c !important; --identity-icon-color: #ffb86c !important; }
+    .identity-color-red       { --identity-tab-color: #ff5555 !important; --identity-icon-color: #ff5555 !important; }
+    .identity-color-pink      { --identity-tab-color: #ff79c6 !important; --identity-icon-color: #ff79c6 !important; }
+    .identity-color-purple    { --identity-tab-color: #bd93f9 !important; --identity-icon-color: #bd93f9 !important; }
+}

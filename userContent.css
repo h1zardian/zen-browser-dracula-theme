@@ -1,0 +1,76 @@
+/* Dracula Theme for Zen Browser - userContent.css */
+
+@media (prefers-color-scheme: dark) {
+
+    /* Global Internal Pages */
+    @-moz-document url-prefix("about:") {
+        :root {
+            --in-content-page-color: #f8f8f2 !important;
+            --color-accent-primary: #bd93f9 !important;
+            --color-accent-primary-hover: #ff79c6 !important; /* Pink on hover */
+            --color-accent-primary-active: #bd93f9 !important;
+            background-color: #282a36 !important;
+            --in-content-page-background: #282a36 !important;
+        }
+    }
+
+    /* New Tab / Home */
+    @-moz-document url("about:newtab"), url("about:home") {
+        :root {
+            --newtab-background-color: #282a36 !important;
+            --newtab-background-color-secondary: #44475a !important;
+            --newtab-element-hover-color: #44475a !important;
+            --newtab-text-primary-color: #f8f8f2 !important;
+            --newtab-wordmark-color: #f8f8f2 !important;
+            --newtab-primary-action-background: #bd93f9 !important;
+        }
+
+        .icon { color: #bd93f9 !important; }
+
+        .card-outer:is(:hover, :focus, .active):not(.placeholder) .card-title {
+            color: #bd93f9 !important;
+        }
+
+        .top-site-outer .search-topsite { background-color: #6272a4 !important; }
+        .compact-cards .card-outer .card-context .card-context-icon.icon-download { fill: #50fa7b !important; }
+    }
+
+    /* Preferences / Settings */
+    @-moz-document url-prefix("about:preferences") {
+        :root {
+            --zen-colors-tertiary: #282a36 !important;
+            --in-content-text-color: #f8f8f2 !important;
+            --link-color: #8be9fd !important;
+            --zen-colors-primary: #44475a !important;
+            --in-content-box-background: #44475a !important;
+            --zen-primary-color: #bd93f9 !important;
+        }
+
+        groupbox, moz-card { background: #282a36 !important; border: 1px solid #44475a !important; }
+        button, groupbox menulist { background: #6272a4 !important; color: #f8f8f2 !important; }
+        .main-content { background-color: #282a36 !important; }
+    }
+
+    /* Add-ons Manager */
+    @-moz-document url-prefix("about:addons") {
+        :root {
+            --zen-dark-color-mix-base: #282a36 !important;
+            --background-color-box: #44475a !important;
+        }
+    }
+
+    /* Protections Dashboard */
+    @-moz-document url-prefix("about:protections") {
+        :root {
+            --zen-primary-color: #bd93f9 !important;
+            --social-color: #bd93f9 !important;
+            --coockie-color: #8be9fd !important;
+            --fingerprinter-color: #f1fa8c !important;
+            --cryptominer-color: #ffb86c !important;
+            --tracker-color: #50fa7b !important;
+            --in-content-primary-button-background: #bd93f9 !important;
+            --in-content-primary-button-text-color: #282a36 !important;
+        }
+        .card { background-color: #44475a !important; }
+    }
+}
